@@ -154,8 +154,17 @@ body.light .hero h1 {
     border: 2px solid #00d1b2;
 }
 
+body.light .btn.secondary {
+    color: #333;
+    border-color: #00d1b2;
+}
+
 .btn.secondary:hover {
     background: #00d1b2;
+}
+
+body.light .btn.secondary:hover {
+    color: #fff;
 }
 
 /* Sections */
@@ -192,6 +201,7 @@ body.light .section h2 {
 body.light .project-card {
     background: #fff;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    
 }
 
 .project-card:hover {
