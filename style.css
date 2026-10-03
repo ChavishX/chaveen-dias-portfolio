@@ -202,9 +202,10 @@ section[id] {
 }
 
 .hero-image {
+    --avatar-size: 200px;
     display: block;
-    width: 200px;
-    height: 200px;
+    width: var(--avatar-size);
+    height: var(--avatar-size);
     margin: 0 auto 1.5rem;
     object-fit: cover;
     border-radius: 50%;
@@ -219,6 +220,16 @@ section[id] {
 
 .hero-image:hover {
     transform: scale(1.05);
+}
+
+.hero-monogram {
+    display: grid;
+    place-items: center;
+    font-size: calc(var(--avatar-size) * 0.32);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--accent-text);
+    user-select: none;
 }
 
 .hero-role {
@@ -499,8 +510,7 @@ footer {
         grid-template-columns: 1fr;
     }
     .hero-image {
-        width: 180px;
-        height: 180px;
+        --avatar-size: 180px;
     }
 }
 
@@ -531,7 +541,6 @@ footer {
         font-size: 1.2rem;
     }
     .hero-image {
-        width: 150px;
-        height: 150px;
+        --avatar-size: 150px;
     }
 }
